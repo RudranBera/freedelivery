@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body{color: black; }    
+  <style>
+        
 
 img{border:2px solid white;}
-	a:link, a:visited {
+  a:link, a:visited {
   align-items: center;    
   background-color:blue;
    color: white;
@@ -21,7 +19,7 @@ img{border:2px solid white;}
 a:hover, a:active {
   background-color: red;
 } 
-  body{ background-color:blue;color: black;  }
+  
 
 
 table{
@@ -36,87 +34,32 @@ button{
   font-size:10px;
   border: red;
   cursor: pointer;
-}
-</style>
-<script>
-  var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/AKfycbw_9EAUdPSDrhOO6kJ4SlHGuEGOzVgtvyugNaE2Sluq_j66JFO9P1uAgGCV4xyN1Yyg/exec'
-
-$('#submit-form').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).success(
-    // do something
-  );
-})
-</script>
-
+  </style>
+  <title>Freedelivery</title>
 </head>
 <body>
-  <br>
-  <form id="test-form">
-      <center><div>
-    <label>FIRST NAME</label>
-    <input type="text" name="FIRSTNAME" placeholder="FIRST NAME"/>
-  </div></center><br>
-    <center><div>
-    <label>LAST NAME</label>
-    <input type="text" name="LASTNAME" placeholder="LAST NAME"/>
-  </div></center><br>
-   <center><div>
-    <label>EMAIL ADDRESS</label>
-    <input type="text" name="EMAIL" placeholder="EMAIL"/>
-  </div></center><br>
-  <center><div>
-    <label>MOBILE NO</label>
-    <input type="text" name="MOBILENO1" placeholder="MOBILE NO"/>
-  </div></center>
-<br>
+<div style="align-items: center;">
+<form name="order" netlify>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlVplaJytIV9Rqcz1bf6go7ur0rapYBWq4srx30E92BVyHNR0&s">
+  <p>
+    <label> Full Name <input type="text" name="Full Name " /></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p><label>Address <input type="Address"name= "address" /></label></p>
+  <p><label>Mobile no <input type="text"name= "mobileno1" /></label></p>
+  <p><label>Mobile no(optional) <input type="text"name= "mobileno2" /></label></p>
+<p><label>Locality <input type="text"name= "locality" /></label></p>
+<p><label>Landmark<input type="text"name= "landmark" /></label></p>
+<p><label>PIN <input type="text"name= "pincode" /></label></p>
+<p><label>City/District/Town <input type="text"name= "city" /></label></p>
+<p><label> State<input type="text"name= "state" /></label></p>
 
- <center> <div>
-    <label>ADDITIONAL MOBILE NO</label>
-    <input type="text" name="MOBILENO2" placeholder="MOBILE NO"/>
-  </div></center>
-  <br>
-  
-  <center><div>
-    <label>ADDRESS</label>
-    <input type="text" name="ADDRESS" placeholder="ADDRESS"/>
-  </div></center><br>
-  
- <center> <div>
-    <label>LOCALITY</label>
-    <input type="text" name="LOCALITY" placeholder="LOCALITY"/>
-  </div></center><br>
-<center><div>
-    <label>LADMARK</label>
-    <input type="text" name="LADMARK" placeholder="LANDMARK"/>
-  </div></center><br>
-  <center><div>
-    <label>CITY/DISTRICT/TOWN</label>
-    <input type="text" name="CITY" placeholder="CITY/DISTRICT/TOWN"/>
-  </div></center><br>
-  <center><div>
-    <label>STATE</label>
-    <input type="text" name="STATE" placeholder="STATE"/>
-  </div></center><br>
-  <center><div>
-    <label>PIN CODE</label>
-    <input type="text" name="PIN" placeholder="PIN"/>
-  </div></center><br>
-  <center><div>
-    <label>ADDRESS TYPE</label>
-    <input type="text" name="ADTYPE" placeholder="HOME/OFFICE"/>
-  </div></center><br>
-  <center><div>
-    <button type="submit"id="submit-form">Submit</button>
-  </div></center><br>
-
+    <button type="submit">Send</button>
+  </p>
 </form>
-<hr>
+</div>
 </body>
 </html>
+
