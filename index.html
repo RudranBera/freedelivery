@@ -1,82 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-        
+  <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101316529);</script>
+<script async src="//static.getclicky.com/js"></script>
 
-img{border:2px solid white;}
-  a:link, a:visited {
-  align-items: center;    
-  background-color:blue;
-   color: white;
-  padding: 10px 20px;
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
 }
 
-
 a:hover, a:active {
   background-color: red;
 } 
   
-
-
-table{
-   overflow-y:scroll;
-   
-   display:block;
-}
-button{
+.dropbtn {
   background-color: #4CAF50;
   color: white;
   padding: 10px;
-  font-size:10px;
-  border: red;
+  font-size: 10px;
+  border: none;
   cursor: pointer;
-  </style>
-  <title>Freedelivery</title>
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 15px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: white;}
+table{
+   overflow-y:scroll;
+   height:380px;
+   display:block;
+}
+
+</style>
+
 </head>
 <body>
-    <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlVplaJytIV9Rqcz1bf6go7ur0rapYBWq4srx30E92BVyHNR0&s"></center>
-<center><div style="padding: 50px;background-color: : blue; border: 5px;border-color: red;">
-  <p style="color: red;"><b>READ CAREFULLY</b></p>
-  <p>*please fill up every field correctly or your order will not be placed properly.</p>
+<center>
   
-  <p>**Your order will be placed within maximum 24 hours(usually less than8 hours) and confirmation email and message will be sent.
-    </p>
-    
-    <p>
-      ***The order can be  tracked with our site or the link given in the message.
-    </p>
 
+
+<div class="dropdown" style="float:left;">
+  <button class="dropbtn"><img src="https://th.bing.com/th/id/OIP.rFmo1ugP4ewwZgxDTDQ_zwHaHa?w=168&h=180&c=7&o=5&dpr=1.25&pid=1.7"height="20px"width="20px"></button>
+  <div class="dropdown-content" style="left:0;">
+    <a href="track.html">Track your delivery </a>
+   <a href="about.html">About us</a>
+    <a href="report.html">Report any problem</a>
+     
+     <a href="contact.html">Contact for help
+     </a>
+
+
+  </div>
 </div>
-  <div>
-<form name="order" netlify>
-  
-  <p>
-    <label> Full Name <input type="text" name="Full Name " /></label>
-  </p>
-  <p>
-    <label>Email <input type="email" name="email" /></label>
-  </p>
-  <p><label>Address <input type="Address"name= "address" /></label></p>
-  <p><label>Mobile no <input type="text"name= "mobileno1" /></label></p>
-  <p><label>Mobile no(optional) <input type="text"name= "mobileno2" /></label></p>
-<p><label>Locality <input type="text"name= "locality" /></label></p>
-<p><label>Landmark<input type="text"name= "landmark" /></label></p>
-<p><label>PIN <input type="text"name= "pincode" /></label></p>
-<p><label>City/District/Town <input type="text"name= "city" /></label></p>
-<p><label> State<input type="text"name= "state" /></label></p>
+<center><p>WELCOME  TO   FREE DELIVERY</p></center><br>
+<hr>
+<center><p style="color: red;"><small>Got something to order??But worried about delivery charges??Dont worry ,we got you covered.Just follow the steps here and place an order without shipping charge even when the order value is less than 500.</small></p></center><br><br>
+<center><p style="font-size: small;">*We are a third party tool.We only handle things till the order is placed ,after succesful placement of order rest will be handled by the ecommerce site.Please copy the link of the product you want to order.</p></center>
+<center><p style="font-size: small;">Order will be placed in cash on delivery mode.</p></center><br>
 
-    <button type="submit">Send</button>
-  </p>
-</form>
-
-</div>
-<div data-netlify-recaptcha="true"></div>
-</center>
-</body>
+<button><a href="form.html">PLACE ORDER</a></button>
+  </body>
 </html>
-
